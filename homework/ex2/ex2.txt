@@ -1,0 +1,13 @@
+When running the program with 1, 2, and 4 processes we observe that the
+program correctly sorts the array, but the processing times differ.
+Processing time is also dependent on inter-process communicator (in this
+case, the network). This leads to some amount of slowdown, which becomes
+noticeable when we use a higher number of processes (ex. 4). Here are the
+processing times for my experiments:
+
+
+array size = 65536
+
+1 process:   0.007847 s
+2 processes: 0.004683 s
+4 processes: 0.005274 s
