@@ -1,0 +1,8 @@
+------------------------------------------------------------------------------
+Exercise 4: merge sort
+------------------------------------------------------------------------------
+Let us consider the provided program merge_sort.c which sorts an array.
+
+In this program, the array is split in two parts having the same size, each part is sorted using a call to quicksort, and finally the two parts are merged together.
+
+Write an MPI program which splits the array into as many parts as available processes, let each process sort its own part using quicksort, then merges the various parts according to a communication pattern that you have to design.  To simplify the problem, you may assume that the number of processes is a power of 2 (the function check_is_power_of_two provided in the source code may do that for you) and divides the array size.
